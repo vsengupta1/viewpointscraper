@@ -44,12 +44,14 @@ def find_campaign_website(name):
         return None
 
 
+app = Flask(__name__)
+
+@app.route('/scrape', methods=['GET'])
 def scrape_website(camp_url):
     res = requests.get(camp_url)
     soup = BeautifulSoup(res.text, 'html.parser')
     return soup.get_text(separator='\n')
 
-app = Flask(__name__)
 
 
 @app.route('/campaignURL', methods=['GET'])

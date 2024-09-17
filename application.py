@@ -10,6 +10,9 @@ candidates = candidates = [
     {'name': 'donald-trump', 'id': '15723', 'urlAdd': '/platform' },
     {'name': 'kamala-harris', 'id': '120012', 'urlAdd': '/issues/' },
     {'name': 'bob-ferguson', 'id': '95581', 'urlAdd': '/issues' },
+    {'name': 'dave-reichert', 'id': '51346', 'urlAdd': '/issues/' },
+    {'name': 'dave-larson', 'id': '175627', 'urlAdd': '' },
+    {'name': 'sal-mungia', 'id': '217452', 'urlAdd': '/issues/' },
 ]
 
 candidate_id_map = {

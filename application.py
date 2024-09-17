@@ -48,7 +48,7 @@ app = Flask(__name__)
 def scrape_website(camp_url):
     res = requests.get(camp_url)
     soup = BeautifulSoup(res.text, 'html.parser')
-    return soup.get_text(separator='\n')
+    return soup.get_text(separator='\n', strip=True)
 
 @app.route('/scrape', methods=['GET'])
 ## example would be GET /scrape?url=https://www.kamalaharris.org/

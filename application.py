@@ -43,15 +43,25 @@ def find_campaign_website(name):
     else:
         return None
 
-
 app = Flask(__name__)
 
-@app.route('/scrape', methods=['GET'])
 def scrape_website(camp_url):
     res = requests.get(camp_url)
     soup = BeautifulSoup(res.text, 'html.parser')
     return soup.get_text(separator='\n')
 
+@app.route('/scrape', methods=['GET'])
+## example would be GET /scrape?url=https://www.kamalaharris.org/
+def scrape():    
+    camp_url = request.args.get('url')
+    if not camp_url:
+        return jsonify({'error': 'URL parameter is required'}), 400
+
+    campaign_html = scrape_website(camp_url)
+    if campaign_html:
+        return jsonify({'campaign': campaign_html})
+    else:
+        return jsonify({'error': 'Error scraping the website'}), 500
 
 
 @app.route('/campaignURL', methods=['GET'])

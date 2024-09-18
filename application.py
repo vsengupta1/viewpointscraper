@@ -21,7 +21,14 @@ candidates = candidates = [
     ## Supreme Court 
     {'name': 'dave-larson', 'id': '175627', 'urlAdd': '', 'race': 'supreme-court'},
     {'name': 'sal-mungia', 'id': '217452', 'urlAdd': '/issues/', 'race': 'supreme-court'},
+
+    ## Delaware Governer 
+    {'name': 'matt-meyer', 'id': '187275', 'urlAdd': '/vision-of-delaware/', 'race': 'governor'},
+    {'name': 'mike-ramone', 'id': '17267', 'urlAdd': '/issues', 'race':'governor'},
     
+    ## Montana Governor
+    {'name': 'greg-gianforte', 'id': '168594', 'urlAdd':'/Priorities/', 'race': 'governor'}, 
+    {'name': 'ryan-busse', 'id': '215485', 'urlAdd': '/issues/', 'race': 'governor'} 
 ]
 
 candidate_id_map = {

@@ -7,12 +7,21 @@ import re
 
 ## mapping candidates to their id
 candidates = candidates = [
-    {'name': 'donald-trump', 'id': '15723', 'urlAdd': '/platform' },
-    {'name': 'kamala-harris', 'id': '120012', 'urlAdd': '/issues/' },
-    {'name': 'bob-ferguson', 'id': '95581', 'urlAdd': '/issues' },
-    {'name': 'dave-reichert', 'id': '51346', 'urlAdd': '/issues/' },
-    {'name': 'dave-larson', 'id': '175627', 'urlAdd': '' },
-    {'name': 'sal-mungia', 'id': '217452', 'urlAdd': '/issues/' },
+    {'name': 'donald-trump', 'id': '15723', 'urlAdd': '/platform' , 'race': 'president'},
+    {'name': 'kamala-harris', 'id': '120012', 'urlAdd': '/issues/', 'race': 'president' },
+
+    ## Washington Governor 
+    {'name': 'bob-ferguson', 'id': '95581', 'urlAdd': '/issues', 'race' : 'governor'},
+    {'name': 'dave-reichert', 'id': '51346', 'urlAdd': '/issues/', 'race' : 'governor'},
+
+    ## Indiana Governor 
+    {'name': 'jennifer-mccormick', 'id': '175286', 'urlAdd': '/issues', 'race': 'governor'},
+    {'name': 'mike-braun', 'id': '148564', 'urlAdd': '/issues', 'race': 'governor'},
+
+    ## Supreme Court 
+    {'name': 'dave-larson', 'id': '175627', 'urlAdd': '', 'race': 'supreme-court'},
+    {'name': 'sal-mungia', 'id': '217452', 'urlAdd': '/issues/', 'race': 'supreme-court'},
+    
 ]
 
 candidate_id_map = {

@@ -28,7 +28,17 @@ candidates = candidates = [
     
     ## Montana Governor
     {'name': 'greg-gianforte', 'id': '168594', 'urlAdd':'/Priorities/', 'race': 'governor'}, 
-    {'name': 'ryan-busse', 'id': '215485', 'urlAdd': '/issues/', 'race': 'governor'} 
+    {'name': 'ryan-busse', 'id': '215485', 'urlAdd': '/issues/', 'race': 'governor'} , 
+    {'name': 'kaiser-leib', 'id': '215486', 'urlAdd': '/platform.html', 'race': 'governor'},
+
+    ## New Hampshire Governor
+    {'name': 'joyce-craig', 'id': '132782', 'urlAdd': '/issues', 'race': 'governor'},
+    {'name': 'kelly-ayotte', 'id': '42352', 'urlAdd': '/issues/', 'race': 'governor'}, 
+
+    ## West Virginia Governor
+    {'name': 'steve-williams', 'id': '114557', 'urlAdd': '/about-steve/', 'race': 'governor'},
+    {'name': 'patrick-morrisey', 'id': '43227', 'urlAdd': '/issues/', 'race': 'governor'},
+
 ]
 
 candidate_id_map = {
